@@ -8,12 +8,12 @@ GitHub Release Notes Aggregator
 
 After cloning, run
 
-  $ brew cask install dotnet dotnet-sdk
-  $ dotnet restore
+    $ brew cask install dotnet dotnet-sdk
+    $ dotnet restore
 
 ## Development
 
-  $ dotnet run
+    $ dotnet run
 
 ## License
 
