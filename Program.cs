@@ -1,12 +1,19 @@
 ﻿using System;
+using System.Threading.Tasks;
+using Octokit;
 
 namespace kraken
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Task.Run(async () =>
+            {
+                var github = new GitHubClient(new ProductHeaderValue("MyAmazingApp"));
+                var user = await github.User.Get("bergren2");
+                Console.WriteLine(user.Followers + " followers");
+            }).GetAwaiter().GetResult();
         }
     }
 }
