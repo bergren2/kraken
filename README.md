@@ -4,6 +4,16 @@
 
 GitHub Release Notes Aggregator
 
+## Setup
+
+After cloning, run
+
+  $ brew cask install dotnet dotnet-sdk
+  $ dotnet restore
+
+## Development
+
+  $ dotnet run
 
 ## License
 
